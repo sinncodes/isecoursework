@@ -1,6 +1,3 @@
-#i have used the supplied lab1 solution code we were given and worked towards during the labs, and expanded on it, every change/addition I have made I commented and explained
-#i removed the comments that were present in the file before for readability; easier to spot what changes I have made 
-
 # IMPORTS
 import pandas as pd
 import numpy as np
@@ -219,7 +216,7 @@ def run_experiment(tfidf, classifier, label, data, repeats, project='project', p
 nb_params = {
     'var_smoothing': np.logspace(-12, 0, 13)
 }
-#THIS IS MY PARAMETERS THAT I PASS FOR THE GRIDCV FUNCTION ALONG WITH THE CLASSIFIERS, ALL RUN x TIMES (Repeat variable), can be changed
+#THESE ARE MY PARAMETERS THAT I PASS FOR THE GRIDCV FUNCTION ALONG WITH THE CLASSIFIERS, ALL RUN x TIMES (Repeat variable), can be changed
 #decision tree grid
 dt_params = {
     'max_depth': [None, 10],#how deep each tree goes
